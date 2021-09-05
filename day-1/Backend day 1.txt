@@ -1,0 +1,57 @@
+Redis Commands:
+redis-cli
+
+SET Key Value
+
+GET Key
+
+DEL Key
+
+EXISTS Key
+
+SETEX Key time Value
+
+ttl
+
+KEYS *
+
+FLUSHALL
+
+LPUSH Friends John
+
+RPUSH Friends Sanji
+
+LRANGE Friends 0 -1
+
+LPOP Friends
+
+SADD Hobbies "Weight Lifting"
+SADD Hobbies "swimming"
+
+SMEMBERS Hobbies
+
+HSET set Key Value
+
+HGET set Key
+
+HGETALL set
+
+HDEL set Key
+
+HEXISTS set Key
+
+
+__POSGRESSQL______________________
+
+psql -U postgres
+
+CREATE USER devsnest WITH PASSWORD 'password';
+
+CREATE DATABASE devs;
+
+GRANT ALL PRIVILEGES ON DATABASE devs to devsnest;
+
+DROP DATABASE devs;
+
+CREATE TABLE;
+
