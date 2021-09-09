@@ -1,0 +1,31 @@
+___fs Module CRUD Operations (REPL method)_____________
+
+>var fs = require("fs");
+
+>fs.mkdirSync('day_5');
+
+> fs.writeFileSync('day_5/hello.txt',"Hello guys!" ,(err)=>
+... {
+..... if(err){
+....... console.log(err)
+....... }
+..... });
+
+> fs.appendFileSync("day_5/hello.txt","Welcome to day_5 THA");
+
+> fs.readFileSync("day_5/hello.txt");
+<Buffer 48 65 6c 6c 6f 20 67 75 79 73 21 57 65 6c 63 6f 6d 65 20 74 6f 20 64 61 79 5f 35 20 54 48 
+41>
+
+> fs.readFileSync("day_5/hello.txt", "utf-8");   
+'Hello guys!Welcome to day_5 THA'
+> var data = fs.readFileSync("day_5/hello.txt","utf-8");
+
+> fs.renameSync("day_5/hello.txt","day_5/day5.txt");
+
+> fs.mkdirSync('temp');
+
+> fs.rmdirSync('temp');
+
+> .exit
+
