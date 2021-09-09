@@ -1,0 +1,27 @@
+redis-cli
+
+SUBSCRIBE channelname
+
+UNSUBSCRIBE channelname
+
+PUBLISH channelname Message
+
+PSUBSCIRIBE pattern 
+
+PUNSUBSCRIBE pattern
+
+XADD streamname key name varname
+
+XADD streamname * name varname
+
+XADD streamname MAXLEN value * name varname
+
+XREAD COUNT count STREAMS streamnames startindex|ID
+
+XREAD BLOCK timeinmilliseconds STREAMS streamname ID
+
+XRANGE streamname start - end
+
+XRANGE streamname - + COUNT count 
+
+XREVRANGE streamname + - COUNT count

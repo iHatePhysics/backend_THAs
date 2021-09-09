@@ -1,0 +1,31 @@
+__PostgresSql______________________
+
+CREATE SCHEMA schemaname;
+
+CREATE TABLE schemaname.tablename(__ NOT NULL, PRIMARY KEY(___));
+
+DROP SCHEMA schemaname;
+
+DROP SCHEMA schemaname CASCADE;
+
+INSERT INTO tablename(columnname s, ) VALUES (value s,);
+
+DROP DATABASE databasename IF EXISTS tablename;
+
+SELECT * FROM tablename;
+
+SELECT COUNT(*) AS "name" FROM tablename;
+
+SELECT CURRENT_TIMESTAMP;
+
+SELECT * FROM COMPANY WHERE condition AND condition;
+	for ex, SELECT * FROM COMPANY WHERE AGE>=25 AND SALARY >= 65000;
+
+SELECT WHERE condition; (for ex, ___IS NOT NULL, ::TEXT LIKE '200%',___ BETWEEN __ AND __,
+__ IN (_,_), __ NOT IN __,  )
+
+
+UPDATE tablename SET columnname = Value WHERE condition;
+	fro ex, UPDATE COMPANY SET ADDRESS='Texas, SALARY=20000 WHERE ID=2;
+
+DELETE FROM tablename WHERE condition;
